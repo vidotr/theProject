@@ -1,26 +1,26 @@
-<div class="row justify-content-center">
-    <div class="col-4" id="cover">
-
-        <div class="row justify-content-center" style="margin-top: 25%; text-align:center;">
-            <div class="col-4">
-                <img src="../../assets/pdp.png" id="pdp">
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-5">
-                <span>Toto Toto</span>
-            </div>
-        </div>
-    </div>
-</div>
 <mat-grid-list cols="5" rowHeight="33%">
     <mat-grid-tile [colspan]="1" [rowspan]="3" [ngStyle]="{'background': 'red'}">
         Pub
     </mat-grid-tile>
-    <mat-grid-tile [colspan]="3" [rowspan]="1" [ngStyle]="{'background': 'blue'}">
+    <mat-grid-tile [colspan]="3" [rowspan]="1" [ngStyle]="{'background': 'rgba(255, 255, 255, 0.7'}">
         <img src="../../assets/pCover.jpeg" alt="" id="pCover">
+        <figure>
+            <img src="../../assets/pdp.png" id="pdp">
+            <figcaption id="userName">
+                Toto Toto
+            </figcaption>
+        </figure>
     </mat-grid-tile>
     <mat-grid-tile [colspan]="1" [rowspan]="3" [ngStyle]="{'background': 'red'}">
         Pub
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="3" [rowspan]="2" [ngStyle]="{'background': 'green'}">
+        <img src="../../assets/pCover.jpeg" alt="" id="pCover">
+        <figure>
+            <img src="../../assets/pdp.png" id="pdp">
+            <figcaption id="userName">
+                Toto Toto
+            </figcaption>
+        </figure>
     </mat-grid-tile>
 </mat-grid-list>
