@@ -8,6 +8,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatChipsModule } from '@angular/material/chips';
 import { ProfileUserComponent } from './profile-user/profile-user.component';
+import { FaqComponent } from './faq/faq.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { GalleryComponent } from './gallery/gallery.component';
 import { MatButtonModule } from '@angular/material/button';
@@ -19,6 +20,7 @@ import { AccueilComponent } from './accueil/accueil.component';
     AppComponent,
     AccueilComponent,
     ProfileUserComponent,
+    FaqComponent,
     GalleryComponent
   ],
   imports: [
