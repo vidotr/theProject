@@ -6,7 +6,12 @@
   flex: 1 1 auto;
 }
 
-.title {
-  flex: 1 1 auto;
-  text-align: center;
+.toolbar-flex {
+  flex: 1 0.5 auto;
+}
+.menuButton{
+  background: #1E90FF;
+}
+.menuButton:hover{
+  background: #00BFFF;
 }
