@@ -15,3 +15,7 @@
 .menuButton:hover{
   background: #00BFFF;
 }
+mat-toolbar{
+  font-family: 'Lobster', cursive;
+  font-size: 30px;
+}
