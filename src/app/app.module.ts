@@ -13,6 +13,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { GalleryComponent } from './gallery/gallery.component';
 import { MatButtonModule } from '@angular/material/button';
 import { AccueilComponent } from './accueil/accueil.component';
+import {MatSelectModule} from '@angular/material/select'; 
 import { MatIconModule } from '@angular/material/icon';
 
 
@@ -33,6 +34,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatCardModule,
     MatFormFieldModule,
     MatChipsModule,
+    MatSelectModule,
     MatButtonModule,
     MatIconModule
   ],
