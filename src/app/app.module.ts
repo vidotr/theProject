@@ -12,6 +12,7 @@ import { FaqComponent } from './faq/faq.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { GalleryComponent } from './gallery/gallery.component';
 import { MatButtonModule } from '@angular/material/button';
+import {MatGridListModule} from '@angular/material/grid-list';
 import { AccueilComponent } from './accueil/accueil.component';
 
 
@@ -31,6 +32,7 @@ import { AccueilComponent } from './accueil/accueil.component';
     MatChipsModule,
     MatCardModule,
     MatFormFieldModule,
+    MatGridListModule,
     MatChipsModule,
     MatButtonModule
   ],

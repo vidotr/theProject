@@ -1,5 +1,20 @@
-#pCover {
-    background: rgba(255, 255, 255, 0.7);
+#cover {
+    background: rgba(255, 255, 255, 0.5);
     width: 500px;
     height: 375px;
+    position: relative;
+    margin-top: 2%;
+    font-size: 25px;
+}
+
+#pCover {
+    position: absolute;
+    z-index: -1;
+}
+
+#pdp {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
 }
