@@ -9,12 +9,14 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { GalleryComponent } from './gallery/gallery.component';
+import { AccueilComponent } from './accueil/accueil.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    GalleryComponent
+    GalleryComponent,
+    AccueilComponent
   ],
   imports: [
     BrowserModule,
