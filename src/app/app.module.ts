@@ -13,7 +13,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { GalleryComponent } from './gallery/gallery.component';
 import { MatButtonModule } from '@angular/material/button';
 import { AccueilComponent } from './accueil/accueil.component';
-
+import {MatSelectModule} from '@angular/material/select'; 
 
 @NgModule({
   declarations: [
@@ -32,6 +32,7 @@ import { AccueilComponent } from './accueil/accueil.component';
     MatCardModule,
     MatFormFieldModule,
     MatChipsModule,
+    MatSelectModule,
     MatButtonModule
   ],
   providers: [],
