@@ -14,6 +14,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { MatButtonModule } from '@angular/material/button';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { AccueilComponent } from './accueil/accueil.component';
+import { MatIconModule } from '@angular/material/icon';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { AccueilComponent } from './accueil/accueil.component';
     MatFormFieldModule,
     MatGridListModule,
     MatChipsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
