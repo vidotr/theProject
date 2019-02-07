@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatChipsModule } from '@angular/material/chips';
+import { ProfileUserComponent } from './profile-user/profile-user.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { GalleryComponent } from './gallery/gallery.component';
 
@@ -14,6 +15,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 @NgModule({
   declarations: [
     AppComponent,
+    ProfileUserComponent,
     GalleryComponent
   ],
   imports: [
