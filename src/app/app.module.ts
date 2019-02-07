@@ -10,6 +10,7 @@ import { MatChipsModule } from '@angular/material/chips';
 import { ProfileUserComponent } from './profile-user/profile-user.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { GalleryComponent } from './gallery/gallery.component';
+import { MatButtonModule } from '@angular/material/button';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     MatChipsModule,
     MatCardModule,
     MatFormFieldModule,
-    MatChipsModule
+    MatChipsModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
