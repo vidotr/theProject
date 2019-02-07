@@ -14,6 +14,8 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { MatButtonModule } from '@angular/material/button';
 import { AccueilComponent } from './accueil/accueil.component';
 import {MatSelectModule} from '@angular/material/select'; 
+import { MatIconModule } from '@angular/material/icon';
+
 
 @NgModule({
   declarations: [
@@ -33,7 +35,8 @@ import {MatSelectModule} from '@angular/material/select';
     MatFormFieldModule,
     MatChipsModule,
     MatSelectModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
