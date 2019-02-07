@@ -1,5 +1,5 @@
 .SectionFaq {
-  background-color: lightcoral;
+  background-color: #21508F;
   padding-left: 10px;
   padding-top: 20px;
   height: 300px;
@@ -7,18 +7,18 @@
 }
 
 .SectionFaq2 {
-    height: 350px;
+    height: 400px;
    padding-left: 10px;
    padding-top: 20px;
-    background-color: lightyellow;
+    background-color: white;
     border:2px solid black;
 }
 
 .SectionFaq3 {
-    height: 350px;
+    height: 210px;
    padding-left: 10px;
    padding-top: 20px;
-    background-color: lightgoldenrodyellow;
+    background-color: #8EB3E5;
     border:2px solid black;
 }
 
@@ -66,13 +66,41 @@
     }
 
     .boxFaq {
-        border:2px solid black;
+        font-size: 17pt;
+        border:2px solid blue;
+        padding: 10px 10px 10px 10px;
+        height: 150px ;
+        width: 500px;
+      text-align: center;
+      background-color: white;
     }
 
-    .caaFaq {
-       margin-left: 3%;
-    }
+.selectlang {
+    float:right;
+}
 
-    .languageFaq {
-        margin-left: 3%;
-    }
+.boxFaq2 {
+
+    font-size: 17pt;
+    border:2px solid blue;
+    padding: 10px 10px 10px 10px;
+    height: 90px ;
+    text-align:center;
+    width:900px;
+    background-color: white;
+}
+
+.boxFaq:hover {
+    cursor:pointer;
+    background-color: lightgrey;
+}
+
+.boxFaq2:hover {
+
+    cursor:pointer;
+    background-color: lightgrey;
+}
+
+.boxCenter {
+margin:auto;
+}
