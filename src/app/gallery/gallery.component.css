@@ -10,7 +10,8 @@ background-size: cover;
 
 .container-gallery
 {
-    margin: 0 0 0 20px;
+    display: inline-block;
+    margin: 0 0 30px 20px;
 }
 
 /*.btn-actions > p
