@@ -6,7 +6,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { AccueilComponent } from './accueil/accueil.component';
 
 const routes: Routes = [
-  {path:'foireaquestion',component: FaqComponent  },
+  {path:'faq',component: FaqComponent  },
   {path: '', pathMatch: 'full', component: AccueilComponent},
   {path: 'gallery', component: GalleryComponent},
   {path: 'rv', component: ProfileUserComponent}
