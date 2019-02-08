@@ -7,7 +7,6 @@ import { AccueilComponent } from './accueil/accueil.component';
 
 const routes: Routes = [
     { path: '', pathMatch: 'full', component: AccueilComponent },
-    { path: 'faq', component: FaqComponent },
     { path: 'gallery', component: GalleryComponent },
     { path: 'rv', component: ProfileUserComponent },
     { path: 'faq', component: FaqComponent }
