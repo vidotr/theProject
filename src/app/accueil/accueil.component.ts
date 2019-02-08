@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Categorie } from '../categorie';
 
 @Component({
   selector: 'app-accueil',
