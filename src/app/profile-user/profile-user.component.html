@@ -39,95 +39,45 @@
                     </mat-expansion-panel-header>
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="card myFav ">
-                                    <img src="../../assets/pdp.png " class="card-img-top " alt="... ">
-                                    <div class="card-body ">
-                                        <h5 class="card-title ">1</h5>
-                                        <p class="card-text ">1</p>
-                                        <a href="# " class="btn btn-primary ">Go somewhere</a>
+                            <ng-container *ngFor="let tile of tiles; index as i;">
+                                <ng-container *ngIf="i === 0">
+                                    <div class="carousel-item active">
+                                        <div class="card myFav">
+                                            <img src="../../assets/pdp.png " class="card-img-top " alt="... ">
+                                            <div class="card-body ">
+                                                <h5 class="card-title ">{{tile.title}}</h5>
+                                                <p class="card-text ">{{tile.text}}</p>
+                                                <a href="# " class="btn btn-primary ">Go somewhere</a>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="card myFav ">
-                                    <img src="../../assets/pdp.png " class="card-img-top " alt="... ">
-                                    <div class="card-body ">
-                                        <h5 class="card-title ">2</h5>
-                                        <p class="card-text ">2</p>
-                                        <a href="# " class="btn btn-primary ">Go somewhere</a>
+                                </ng-container>
+                                <ng-container *ngIf="i > 0">
+                                    <div class="carousel-item">
+                                        <div class="card myFav">
+                                            <img src="../../assets/pdp.png " class="card-img-top " alt="... ">
+                                            <div class="card-body ">
+                                                <h5 class="card-title ">{{tile.title}}</h5>
+                                                <p class="card-text ">{{tile.text}}</p>
+                                                <a href="# " class="btn btn-primary ">Go somewhere</a>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
+                                </ng-container>
+
+                            </ng-container>
                         </div>
-                        <a class="carousel-control-prev " href="/rv/#carouselExampleControls " role="button " data-slide="prev ">
-                            <span class="carousel-control-prev-icon " aria-hidden="true "></span>
-                            <span class="sr-only ">Previous</span>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
                         </a>
-                        <a class="carousel-control-next " href="/rv/#carouselExampleControls " role="button " data-slide="next ">
-                            <span class="carousel-control-next-icon " aria-hidden="true "></span>
-                            <span class="sr-only ">Next</span>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
                         </a>
                     </div>
                 </mat-expansion-panel>
             </mat-accordion>
-            <!--
-                <div class="accordion " id="accordionExample ">
-                <div class="card ">
-                    <div class="card-header " id="headingOne ">
-                        <h5 class="mb-0 ">
-                            <button class="btn btn-link " type="button " data-toggle="collapse " data-target="#collapseOne " aria-expanded="true " aria-controls="collapseOne ">
-                        Bio
-                      </button>
-                        </h5>
-                    </div>
-
-                    <div id="collapseOne " class="collapse show " aria-labelledby="headingOne " data-parent="#accordionExample ">
-                        <div class="card-body ">
-                            Bonjour je suis le testeur.
-                        </div>
-                    </div>
-                </div>
-                <div class="card ">
-                    <div class="card-header " id="headingTwo ">
-                        <h5 class="mb-0 ">
-                            <button class="btn btn-link collapsed " type="button " data-toggle="collapse " data-target="#collapseTwo " aria-expanded="false " aria-controls="collapseTwo ">
-                        My favorites subjects
-                      </button>
-                        </h5>
-                    </div>
-                    <div id="collapseTwo " class="collapse " aria-labelledby="headingTwo " data-parent="#accordionExample ">
-                        <div class="card-body ">
-                            <div class="card myFav ">
-                                <img src="../../assets/pdp.png " class="card-img-top " alt="... ">
-                                <div class="card-body ">
-                                    <h5 class="card-title ">Card title</h5>
-                                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="# " class="btn btn-primary ">Go somewhere</a>
-                                </div>
-                            </div>
-                            <div class="card myFav ">
-                                <img src="../../assets/pdp.png " class="card-img-top " alt="... ">
-                                <div class="card-body ">
-                                    <h5 class="card-title ">Card title</h5>
-                                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="# " class="btn btn-primary ">Go somewhere</a>
-                                </div>
-                            </div>
-                            <div class="card myFav ">
-                                <img src="../../assets/pdp.png " class="card-img-top " alt="... ">
-                                <div class="card-body ">
-                                    <h5 class="card-title ">Card title</h5>
-                                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="# " class="btn btn-primary ">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            -->
-
         </mat-grid-tile>
     </mat-grid-list>
 </div>

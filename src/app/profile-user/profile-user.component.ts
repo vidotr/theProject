@@ -24,18 +24,4 @@ export class ProfileUserComponent implements OnInit {
 
     ngOnInit() {
     }
-
-    /*ngClassForCarousselItem() {
-        this.nb += 1;
-        let data = '';
-        if (this.nb === 1) {
-            data = 'carousel-item active';
-        } else {
-            data = 'carousel-item';
-        }
-        return data;
-    }*/
-    checkNb() {
-        this.nb += 1;
-    }
 }
