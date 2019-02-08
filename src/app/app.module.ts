@@ -18,6 +18,7 @@ import {MatSelectModule} from '@angular/material/select';
 import { MatIconModule } from '@angular/material/icon';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { FaqCatComponent } from './faq-cat/faq-cat.component';
+import {MatTabsModule} from '@angular/material/tabs';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { FaqCatComponent } from './faq-cat/faq-cat.component';
     MatSelectModule,
     MatButtonModule,
     MatIconModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
