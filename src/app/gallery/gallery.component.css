@@ -18,3 +18,36 @@ background-size: cover;
 {
     margin: -25px 0 0 60px ;
 }*/
+
+.container-nav
+{
+    margin-top: 20px;
+}
+
+.navigation
+{
+    text-align: center;
+}
+
+.navigation > button
+{
+    margin-right: 20px;
+}
+
+.mat-stroked-button
+{
+    border-radius: 10px;
+}
+
+.categories-icon, .recent-icon, .info-icon
+{
+    margin-right: 10px;
+}
+
+#searchInput
+{
+    border-radius: 10px;
+    margin-right: 5px;
+    padding: 5px;   
+    box-sizing: border-box;
+}
