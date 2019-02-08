@@ -39,7 +39,6 @@ import {MatListModule} from '@angular/material/list';
     MatCardModule,
     MatFormFieldModule,
     MatGridListModule,
-    MatChipsModule,
     MatSelectModule,
     MatButtonModule,
     MatIconModule,
