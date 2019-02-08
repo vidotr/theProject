@@ -35,6 +35,7 @@ export class FaqCatComponent implements OnInit {
         "Des sondages",
         "Entrées Wiki",
         "Dossier Partagé");
+        this.id =  "Utiliser "+this.nomProjet; 
     }
 
     if (this.id == 2) {
@@ -52,6 +53,7 @@ export class FaqCatComponent implements OnInit {
         "Apparence"
 
       );
+      this.id =  " Le Coin des Leaders et Curators  "; 
     }
 
     if (this.id == 3) {
@@ -66,6 +68,7 @@ export class FaqCatComponent implements OnInit {
         "Directives et pratiques exemplaires"
 
       );
+      this.id =  "Partenaires  "+this.nomProjet; 
     }
 
     if (this.id == 4) {
@@ -81,6 +84,7 @@ export class FaqCatComponent implements OnInit {
         "Comment "+this.nomProjet+" se fonctionne-t-il ?"
 
       );
+      this.id = " Ressources supplémentaires"; 
     }
 
 
