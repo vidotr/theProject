@@ -25,9 +25,9 @@ export class FaqCatComponent implements OnInit {
 
     if (this.id == 1) {
       this.rubrique.push("Enregistrement et Activation de votre compte",
-        "Trouver un Amino",
-        "Créer votre propre Amino",
-        "Rejoindre et Quitter Aminos",
+        "Trouver un "+this.nomProjet,
+        "Créer votre propre"+this.nomProjet ,
+        "Rejoindre et Quitter "+this.nomProjet,
         "Navigation",
         "Des Blogs, des Questions, et des Images",
         "Vidéos",
@@ -42,9 +42,9 @@ export class FaqCatComponent implements OnInit {
         "Se lancer : Télécharger ACM",
         "Se lancer : Créer votre Communauté",
         "Pour commencer : Mise en place de la communauté",
-        "Nommer son Amino",
+        "Nommer son"+this.nomProjet,
         "Options de confidentialité",
-        "Personnaliser votre Amino",
+        "Personnaliser votre "+this.nomProjet,
         "Modules actifs : Une introduction",
         "Modules actifs : Types",
         "Modules actifs : Permissions",
@@ -71,14 +71,14 @@ export class FaqCatComponent implements OnInit {
     if (this.id == 4) {
       this.rubrique.push(
         "Faire une requête d'enlèvement de droits de l'auteur",
-        "Contactez L'Équipe Amino",
+        "Contactez L'Équipe "+this.nomProjet,
         "Demandes de divulgation d'urgence",
         "Demandes de préservation",
-        "Soumettre un ordre à Amino",
-        "Identification de l'utilisateur et sécurité sur Amino",
-        "La sécurité dans Amino : les règles et les directives",
+        "Soumettre un ordre à "+this.nomProjet,
+        "Identification de l'utilisateur et sécurité sur "+this.nomProjet,
+        "La sécurité dans "+this.nomProjet+" : les règles et les directives",
         "Supprimer un compte",
-        "Comment Amino se fonctionne-t-il ?"
+        "Comment "+this.nomProjet+" se fonctionne-t-il ?"
 
       );
     }
