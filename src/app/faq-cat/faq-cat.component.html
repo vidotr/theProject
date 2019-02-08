@@ -1,4 +1,14 @@
 <div class="container listeux">
+    <div class='row SectionFaq'>
+        <div class='col-6'>
+          <ol class='ligne'><li><a [routerLink]="['/faq']"  >Centre d'aide {{nomProjet}}</a></li><li><a [routerLink]=""> {{id}}</a></li></ol>
+        </div>
+        <div class='col-6'>
+            <div class="searchbar">
+            <input class="search_input" type="text" name="" placeholder="Rechercher...">
+            <a href="#" class="search_icon"><i class="fas fa-search"></i></a> </div>
+        </div>
+      </div>
   <div class='row SectionFaq'>
     <div class="col-12">
       <div class="list-group " *ngFor='let rub of rubrique'>
