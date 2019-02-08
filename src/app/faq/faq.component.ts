@@ -11,7 +11,7 @@ export class FaqComponent implements OnInit {
   nomProjet = 'ourProject';
   selected = 'Francais';
 
-  id: number;
+  id: any;
   private sub: any;
 
   constructor(private route: ActivatedRoute,private router: Router) {}
@@ -19,7 +19,6 @@ export class FaqComponent implements OnInit {
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
        this.id = +params['id']; // (+) converts string 'id' to a number
-
        // In a real app: dispatch action to load the details here.
     });
   }
