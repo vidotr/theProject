@@ -61,3 +61,8 @@ background-size: cover;
 {
     margin-left: 10px;
 }
+
+.mat-card-image
+{
+    height: 350px;
+}

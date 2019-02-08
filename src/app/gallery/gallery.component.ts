@@ -1,6 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Url } from 'url';
-import { randomBytes } from 'crypto';
 
 @Component({
   selector: 'app-gallery',

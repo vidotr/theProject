@@ -1,9 +1,8 @@
 <div style="height: 100%;">
-    <mat-grid-list cols="5" rowHeight="33%">
-        <mat-grid-tile [colspan]="1" [rowspan]="3" [ngStyle]="{'background': 'red'}">
-            Pub
+    <mat-grid-list cols="5" rowHeight="33.333%">
+        <mat-grid-tile class="border-right" [colspan]="1" [rowspan]="3" [ngStyle]="{'background': '#F6FEFE'}">
         </mat-grid-tile>
-        <mat-grid-tile [colspan]="3" [rowspan]="1" [ngStyle]="{'background': 'rgba(255, 255, 255, 0.7'}">
+        <mat-grid-tile [colspan]="3" [rowspan]="1" [ngStyle]="{'background': 'rgba(255, 255, 255, 0.7)', 'margin-top' : '1%'}">
             <img src="../../assets/pCover.jpeg" alt="" id="pCover">
             <figure>
                 <img src="../../assets/pdp.png" id="pdp">
@@ -11,9 +10,14 @@
                     Toto Toto
                 </figcaption>
             </figure>
+            <button mat-fab>
+                <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+            </button>
+            <button mat-fab id="goFollow">
+                <mat-icon aria-label="Example icon-button with a heart icon">gps_fixed</mat-icon>
+            </button>
         </mat-grid-tile>
-        <mat-grid-tile [colspan]="1" [rowspan]="3" [ngStyle]="{'background': 'red'}">
-            Pub
+        <mat-grid-tile class="border-left" [colspan]="1" [rowspan]="3" [ngStyle]="{'background': '#F6FEFE'}">
         </mat-grid-tile>
         <mat-grid-tile [colspan]="3" [rowspan]="2">
             <mat-accordion id="myFav">
@@ -64,7 +68,6 @@
                                         </div>
                                     </div>
                                 </ng-container>
-
                             </ng-container>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
