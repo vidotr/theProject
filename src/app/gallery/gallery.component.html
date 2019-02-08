@@ -1,11 +1,22 @@
 <section class="container-nav">
-  <button mat-stroked-button>Catégories</button>
-  <button mat-stroked-button>Récents</button>
-  <button mat-stroked-button>A propos</button>
-    <input type="text" name="searchContent" id="searchContent" placeholder="Rechercher..."/>
+  <div class="navigation">
     <button mat-stroked-button>
-      <i class="material-icons">search</i>
-   </button>
+      <i class="material-icons categories-icon">stars</i> 
+      <span>Catégories</span>
+    </button>
+    <button mat-stroked-button>
+      <i class="material-icons recent-icon">query_builder</i>
+      <span>Récents</span>
+    </button>
+    <button mat-stroked-button>
+      <i class="material-icons info-icon">info</i>
+      <span>A propos</span>
+    </button>
+    <input type="text" name="searchContent" id="searchInput" placeholder="Rechercher..."/>
+    <button mat-stroked-button>
+      <i class="material-icons search-icon">search</i>
+    </button>
+  </div>
 </section>
 <section class="container-gallery">
   <mat-card class="example-card">
