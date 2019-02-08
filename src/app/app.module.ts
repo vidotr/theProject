@@ -17,8 +17,9 @@ import { AccueilComponent } from './accueil/accueil.component';
 import {MatSelectModule} from '@angular/material/select';
 import { MatIconModule } from '@angular/material/icon';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { FaqCatComponent } from './faq-cat/faq-cat.component';
 import {MatTabsModule} from '@angular/material/tabs';
-
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     AccueilComponent,
     ProfileUserComponent,
     FaqComponent,
-    GalleryComponent
+    GalleryComponent,
+    FaqCatComponent
   ],
   imports: [
     BrowserModule,
@@ -37,11 +39,11 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatCardModule,
     MatFormFieldModule,
     MatGridListModule,
-    MatChipsModule,
     MatSelectModule,
     MatButtonModule,
     MatIconModule,
     MatExpansionModule,
+    MatListModule,
     MatTabsModule
   ],
   providers: [],
