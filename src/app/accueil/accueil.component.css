@@ -92,3 +92,10 @@ h3 {
     width: 270px;
     height: 270px;
 }
+.centered{
+    text-align: center;
+}
+
+.centered button, .centered mat-form-field{
+    margin: 1%;
+}

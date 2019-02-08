@@ -103,16 +103,20 @@
                     </ng-template>
                     <ng-template #altcontenu>
                         <mat-tab label="Connexion">
-                            <mat-form-field appearance="outline">
-                                <mat-label>Pseudo</mat-label>
-                                <input matInput placeholder="Veuillez entrer votre pseudo">
-                                <mat-hint>Hint</mat-hint>
-                            </mat-form-field>
-                            <mat-form-field appearance="outline">
+                            <div class="centered">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Pseudo</mat-label>
+                                    <input matInput placeholder="Veuillez entrer votre pseudo">
+                                </mat-form-field>
+                                <mat-form-field appearance="outline">
                                     <mat-label>Mot de passe</mat-label>
                                     <input matInput type="password" placeholder="Veuillez entrer votre mot de passe">
-                                    <mat-hint>Hint</mat-hint>
                                 </mat-form-field>
+                            </div>
+                            <div class="centered">
+                                <button mat-raised-button color="primary">Evoyer</button>
+                                <button mat-raised-button color="accent">Oublié ?</button>
+                            </div>
                         </mat-tab>
                     </ng-template>
                     <mat-tab label="Partenaires">
