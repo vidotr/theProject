@@ -1,17 +1,11 @@
-<section>
-  <header id="header" class="header">
-    <nav class="header-nav">
-      <div class="search-button">
-        <a href="#" class="search-toggle" data-selector="#header"></a>
-      </div>
-      <ul class="menu">
-        <li><a href="#">Catégories</a></li>
-        <li><a href="#">Récents</a></li>
-        <li><a href="#">A propos</a></li>
-      </ul>
-      <input type="text" class="text search-input" placeholder="Type here to search..."/>
-    </nav>
-  </header>
+<section class="container-nav">
+  <button mat-stroked-button>Catégories</button>
+  <button mat-stroked-button>Récents</button>
+  <button mat-stroked-button>A propos</button>
+    <input type="text" name="searchContent" id="searchContent" placeholder="Rechercher..."/>
+    <button mat-stroked-button>
+      <i class="material-icons">search</i>
+   </button>
 </section>
 <section class="container-gallery">
   <mat-card class="example-card">
@@ -46,19 +40,5 @@
     </mat-card-actions>
   </mat-card>
 </section>
-<script>
-  $(document).ready(function()
-  {
-    $('.header').on('click', '.search-toggle', function(e) 
-    {
-        var selector = $(this).data('selector');
-
-        $(selector).toggleClass('show').find('.search-input').focus();
-        $(this).toggleClass('active');
-
-        e.preventDefault();
-    });
-  });
-</script>
 
 

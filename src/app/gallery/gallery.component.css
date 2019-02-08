@@ -18,3 +18,13 @@ background-size: cover;
 {
     margin: -25px 0 0 60px ;
 }*/
+
+#searchContent
+{
+    border-radius: 10px;
+}
+
+.mat-stroked-button
+{
+    border-radius: 10px;
+}
