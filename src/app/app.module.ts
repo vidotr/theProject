@@ -17,6 +17,7 @@ import { AccueilComponent } from './accueil/accueil.component';
 import {MatSelectModule} from '@angular/material/select';
 import { MatIconModule } from '@angular/material/icon';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatTabsModule} from '@angular/material/tabs';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatSelectModule,
     MatButtonModule,
     MatIconModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
