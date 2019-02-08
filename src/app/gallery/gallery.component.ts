@@ -10,6 +10,7 @@ export class GalleryComponent implements OnInit {
   myGallery: GalleryComponent;
 
   list = Array<GalleryComponent>();
+  counterlike: number = 1;
 
   listGalleries: listGallery[] = [
     { titre: "Test", description: "sjdgfjsgsdfghsefdjghsdfg", image: "https://pbs.twimg.com/profile_images/779305023507271681/GJJhYpD2_400x400.jpg", today: Date.now(), likes: 250, comments: 45 },
@@ -22,6 +23,12 @@ export class GalleryComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  like(gallery: GalleryComponent): void
+  {
+    this.myGallery = gallery;
+    console.log(this.myGallery);  
   }
 }
 
