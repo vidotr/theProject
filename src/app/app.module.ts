@@ -19,7 +19,7 @@ import { MatIconModule } from '@angular/material/icon';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { FaqCatComponent } from './faq-cat/faq-cat.component';
 import {MatTabsModule} from '@angular/material/tabs';
-
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -44,6 +44,7 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatButtonModule,
     MatIconModule,
     MatExpansionModule,
+    MatListModule,
     MatTabsModule
   ],
   providers: [],
