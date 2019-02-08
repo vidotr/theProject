@@ -11,7 +11,6 @@ background-size: cover;
 .container-gallery
 {
     display: inline-block;
-    /*margin: 0 0 30px 20px;*/
     margin: 30px 20px 20px 20px;
 }
 
@@ -51,4 +50,14 @@ background-size: cover;
     margin-right: 5px;
     padding: 5px;   
     box-sizing: border-box;
+}
+
+.likes
+{
+    margin-left: 10px;
+}
+
+.comments
+{
+    margin-left: 10px;
 }
