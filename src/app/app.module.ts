@@ -1,54 +1,55 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatCardModule } from '@angular/material/card';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatChipsModule } from '@angular/material/chips';
-import { ProfileUserComponent } from './profile-user/profile-user.component';
-import { FaqComponent } from './faq/faq.component';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { GalleryComponent } from './gallery/gallery.component';
-import { MatButtonModule } from '@angular/material/button';
-import {MatGridListModule} from '@angular/material/grid-list';
+
 import { AccueilComponent } from './accueil/accueil.component';
-import {MatSelectModule} from '@angular/material/select';
-import { MatIconModule } from '@angular/material/icon';
-import {MatExpansionModule} from '@angular/material/expansion';
+import { AppComponent } from './app.component';
 import { FaqCatComponent } from './faq-cat/faq-cat.component';
-import {MatTabsModule} from '@angular/material/tabs';
-import {MatListModule} from '@angular/material/list';
+import { FaqComponent } from './faq/faq.component';
+import { ProfileUserComponent } from './profile-user/profile-user.component';
+import { GalleryComponent } from './gallery/gallery.component';
+
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatIconModule } from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
+import { MatListModule } from '@angular/material/list';
+import { MatSelectModule } from '@angular/material/select';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    AccueilComponent,
-    ProfileUserComponent,
-    FaqComponent,
-    GalleryComponent,
-    FaqCatComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatChipsModule,
-    MatCardModule,
-    MatFormFieldModule,
-    MatGridListModule,
-    MatSelectModule,
-    MatButtonModule,
-    MatIconModule,
-    MatExpansionModule,
-    MatListModule,
-    MatTabsModule,
-    MatInputModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        AccueilComponent,
+        ProfileUserComponent,
+        FaqComponent,
+        GalleryComponent,
+        FaqCatComponent
+    ],
+    imports: [
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        BrowserModule,
+        MatButtonModule,
+        MatCardModule,
+        MatChipsModule,
+        MatExpansionModule,
+        MatFormFieldModule,
+        MatGridListModule,
+        MatIconModule,
+        MatInputModule,
+        MatListModule,
+        MatSelectModule,
+        MatTabsModule,
+        MatToolbarModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
