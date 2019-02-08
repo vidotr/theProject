@@ -35,7 +35,7 @@
       </div>
     </mat-card-content>
     <mat-card-actions>
-      <p>{{ gallery.today | date }}</p>
+      <p>{{ gallery.today | date: 'dd/MM/yyyy' }}</p>
       <div class="btn-actions">
         <button mat-button>
           <i class="material-icons">thumb_up</i> <span class="likes">{{ gallery.likes }}</span>
