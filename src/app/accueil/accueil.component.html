@@ -9,14 +9,14 @@
                     <span *ngIf="uneCateg.favori;then contenu else altcontenu"></span>
                     <ng-template #contenu>
                         <mat-card-subtitle>
-                            <i class="material-icons"> favorite</i>
+                            <i class="material-icons">favorite</i>
                         </mat-card-subtitle>
                     </ng-template>
                     <ng-template #altcontenu>
                         <mat-card-subtitle>nope</mat-card-subtitle>
                     </ng-template>
                 </mat-card-header>
-                <img mat-card-image src="src/assets/img/{{uneCateg.image}}" alt="Photo of a Shiba Inu">
+                <img mat-card-image class="imgCategory" src="../../assets/{{uneCateg.image}}" alt="Photo of {{uneCateg.nom}}">
                 <mat-card-content>
                     <p>{{uneCateg.description}}</p>
                 </mat-card-content>
