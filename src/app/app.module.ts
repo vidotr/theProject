@@ -17,6 +17,7 @@ import { AccueilComponent } from './accueil/accueil.component';
 import {MatSelectModule} from '@angular/material/select';
 import { MatIconModule } from '@angular/material/icon';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { FaqCatComponent } from './faq-cat/faq-cat.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     AccueilComponent,
     ProfileUserComponent,
     FaqComponent,
-    GalleryComponent
+    GalleryComponent,
+    FaqCatComponent
   ],
   imports: [
     BrowserModule,
