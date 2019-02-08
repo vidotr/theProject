@@ -8,10 +8,20 @@ import { Categorie } from '../categorie';
 })
 export class AccueilComponent implements OnInit {
 
-    ListCategory: Array<Categorie>;
+    // ListCategory: Array<Categorie>;
+    connectee: boolean;
+    ListCategoryTest: Categorie[] = [
+        { nom: 'Technologie', description: 'Toutes les nouveauté sur la technologie', image: 'One', favori: false },
+        { nom: 'K-pop', description: 'Toutes les nouveauté sur la K-pop', image: 'One', favori: false },
+        { nom: 'Drama', description: 'Toutes les nouveauté sur les Dramas', image: 'One', favori: true },
+        { nom: 'Anime', description: 'Toutes les nouveauté sur les Animés', image: 'One', favori: false },
+    ];
+
   constructor() { }
 
   ngOnInit() {
+      this.connectee = false;
+      // this.ListCategory = new Array();
   }
 
 }
