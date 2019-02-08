@@ -59,12 +59,21 @@ h3 {
 }
 
 .card-category {
-    margin: 1%;
-    max-width: 200px;
-    max-width: 200px;
+    margin: 0 1%;
+    width: 200px;
+    height: 550px;
 }
 
 .example-header-image {
   background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
   background-size: cover;
+}
+
+.box-category{
+    margin-left: 35%;
+    margin: 3% 0;
+    max-width: 600px;
+    height: 220px;
+    overflow-x: scroll;
+
 }
