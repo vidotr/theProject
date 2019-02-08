@@ -1,0 +1,27 @@
+<div class="container listeux">
+  <div class='row SectionFaq'>
+    <div class="col-12">
+      <div class="list-group " *ngFor='let rub of rubrique'>
+        <a href="#" class="list-group-item list-group-item-action">{{rub}}</a>
+      </div>
+    </div>
+  </div>
+
+
+<div class='row SectionFaq3'>
+  <div class='col-6 '>
+    Centre d’Aide {{nomProjet}}
+  </div>
+
+  <div class='col-6 '>
+    <div class='selectlang'>
+      <mat-form-field>
+        <mat-select [(value)]="selected">
+          <mat-option value="Francais">Français</mat-option>
+          <mat-option value="English">English</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+</div>
+</div>
