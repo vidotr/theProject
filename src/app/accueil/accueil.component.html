@@ -79,9 +79,9 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+<div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
     aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
@@ -103,9 +103,21 @@
                     </ng-template>
                     <ng-template #altcontenu>
                         <mat-tab label="Connexion">
-                            Content 3
+                            <mat-form-field appearance="outline">
+                                <mat-label>Pseudo</mat-label>
+                                <input matInput placeholder="Veuillez entrer votre pseudo">
+                                <mat-hint>Hint</mat-hint>
+                            </mat-form-field>
+                            <mat-form-field appearance="outline">
+                                    <mat-label>Mot de passe</mat-label>
+                                    <input matInput type="password" placeholder="Veuillez entrer votre mot de passe">
+                                    <mat-hint>Hint</mat-hint>
+                                </mat-form-field>
                         </mat-tab>
                     </ng-template>
+                    <mat-tab label="Partenaires">
+                        nos partenaires
+                    </mat-tab>
                 </mat-tab-group>
                 <!-- Un composant -->
             </div>
