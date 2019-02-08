@@ -16,12 +16,13 @@
     font-size: 32px;
 }
 
-#myFav {
-    overflow: scroll;
-}
-
 mat-accordion {
     position: absolute;
     top: 2%;
     width: 100%;
+}
+
+.myFav {
+    width: 18rem;
+    margin: 3% 2% 0 0;
 }
