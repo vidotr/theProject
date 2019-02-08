@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
+import { ActivatedRoute, Params } from '@angular/router';
 @Component({
   selector: 'app-faq',
   templateUrl: './faq.component.html',
@@ -7,11 +8,27 @@ import { Component, OnInit } from '@angular/core';
  
 })
 export class FaqComponent implements OnInit {
+  nomProjet = 'ourProject';
   selected = 'Francais';
 
-  constructor() { }
+  id: number;
+  private sub: any;
+
+  constructor(private route: ActivatedRoute,private router: Router) {}
 
   ngOnInit() {
+    this.sub = this.route.params.subscribe(params => {
+       this.id = +params['id']; // (+) converts string 'id' to a number
+
+       // In a real app: dispatch action to load the details here.
+    });
   }
 
+  ngOnDestroy() {
+    this.sub.unsubscribe();
+  }
+
+  changeCat(id) {
+    this.router.navigate(['/catFaq/', id]);
+  }
 }
