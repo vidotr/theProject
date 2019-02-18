@@ -1,4 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Observable } from 'rxjs';
+import { HttpHeaders, HttpClient } from '@angular/common/http';
+import { GalleryService } from '../gallery.service';
 
 @Component({
   selector: 'app-gallery',
@@ -10,7 +13,6 @@ export class GalleryComponent implements OnInit {
   myGallery: GalleryComponent;
 
   list = Array<GalleryComponent>();
-  counterlike: number = 1;
 
   listGalleries: listGallery[] = [
     { titre: "Test", description: "sjdgfjsgsdfghsefdjghsdfg", image: "https://pbs.twimg.com/profile_images/779305023507271681/GJJhYpD2_400x400.jpg", today: Date.now(), likes: 250, comments: 45 },
@@ -20,15 +22,17 @@ export class GalleryComponent implements OnInit {
     { titre: "Test5", description: "Ceci est un test, bruhhhhh", image: "https://pbs.twimg.com/profile_images/779305023507271681/GJJhYpD2_400x400.jpg", today: Date.now(), likes: 5000, comments: 10000}
   ];
 
-  constructor() { }
+  constructor(private galleryservice: GalleryService) { }
 
   ngOnInit() {
+    this.galleryservice.getHttp().subscribe(val => {
+      console.log(val);
+    })
   }
 
-  like(gallery: GalleryComponent): void
+  addLike(gallery: GalleryComponent): void
   {
     this.myGallery = gallery;
-    console.log(this.myGallery);  
   }
 }
 

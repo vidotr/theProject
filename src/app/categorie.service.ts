@@ -7,14 +7,9 @@ import { Observable } from 'rxjs';
 })
 export class CategorieService {
 
-    httpOptions = {
-        headers: new HttpHeaders({
-          'Access-Control-Allow-Headers': 'Content-Type'
-        })
-      };
   constructor(private Http: HttpClient) { }
 
   getHttp(): Observable<any> {
-    return this.Http.get('https://localhost:44382/api/Razor', this.httpOptions);
+    return this.Http.get('https://localhost:44382/api/Razor');
   }
 }

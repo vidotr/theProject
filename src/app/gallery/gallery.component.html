@@ -37,14 +37,12 @@
     <mat-card-actions>
       <p>{{ gallery.today | date: 'dd/MM/yyyy' }}</p>
       <div class="btn-actions">
-        <button mat-button (click)="like(gallery.likes = gallery.likes+1)">
+        <button mat-button (click)="addLike(gallery.likes = gallery.likes+1)">
           <i class="material-icons">thumb_up</i> <span class="likes">{{ gallery.likes }}</span>
         </button>
-        <!--<p> {{ likes }} </p>-->
         <button mat-button>
             <i class="material-icons">comment</i> <span class="comments">{{ gallery.comments }}</span>
         </button>
-        <!--<p> {{ comments }}</p>-->
       </div>
     </mat-card-actions>
   </mat-card>
