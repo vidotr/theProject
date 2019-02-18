@@ -8,7 +8,7 @@ import { CategorieService } from '../categorie.service';
   styleUrls: ['./accueil.component.css']
 })
 export class AccueilComponent implements OnInit {
-    // ListCategory: Array<Categorie>;
+    ListCategory: Array<Categorie>;
     connectee: boolean;
     ListCategoryTest: Categorie[] = [
         { nom: 'Technologie', description: 'Toutes les nouveauté sur la technologie', image: 'a.jpeg', favori: false },
@@ -22,6 +22,7 @@ export class AccueilComponent implements OnInit {
   ngOnInit() {
       this.connectee = false;
 
+      this.ListCategory = this.CatService.getHttp();
       this.CatService.getHttp().subscribe(val => {
         console.log(val);
       });
