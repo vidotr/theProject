@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Categorie } from '../categorie';
+import { CategorieService } from '../categorie.service';
 
 @Component({
   selector: 'app-accueil',
@@ -7,7 +8,6 @@ import { Categorie } from '../categorie';
   styleUrls: ['./accueil.component.css']
 })
 export class AccueilComponent implements OnInit {
-
     // ListCategory: Array<Categorie>;
     connectee: boolean;
     ListCategoryTest: Categorie[] = [
@@ -17,10 +17,14 @@ export class AccueilComponent implements OnInit {
         { nom: 'Anime', description: 'Toutes les nouveauté sur les Animés', image: 'One', favori: false },
     ];
 
-  constructor() { }
+  constructor(private CatService: CategorieService) { }
 
   ngOnInit() {
       this.connectee = false;
+
+      this.CatService.getHttp().subscribe(val => {
+        console.log(val);
+      });
       // this.ListCategory = new Array();
   }
 

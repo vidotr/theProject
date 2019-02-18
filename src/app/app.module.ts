@@ -22,6 +22,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
     declarations: [
@@ -47,7 +48,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
         MatListModule,
         MatSelectModule,
         MatTabsModule,
-        MatToolbarModule
+        MatToolbarModule,
+        HttpClientModule
     ],
     providers: [],
     bootstrap: [AppComponent]
