@@ -23,6 +23,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
     declarations: [
@@ -31,7 +32,8 @@ import { HttpClientModule } from '@angular/common/http';
         ProfileUserComponent,
         FaqComponent,
         GalleryComponent,
-        FaqCatComponent
+        FaqCatComponent,
+        FooterComponent
     ],
     imports: [
         AppRoutingModule,
