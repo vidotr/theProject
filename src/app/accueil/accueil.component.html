@@ -2,10 +2,10 @@
     <div class="caption">
         <button type="button" class="border" data-toggle="modal" data-target="#exampleModalCenter">C'EST PARTI !</button>
         <div class="box-category">
-            <mat-card class="exemple-card" *ngFor="let uneCateg of ListCategoryTest">
+            <mat-card class="exemple-card" *ngFor="let uneCateg of ListZaffaire">
                 <mat-card-header>
                     <div mat-card-avatar class="example-header-image"></div>
-                    <mat-card-title>{{uneCateg.nom}}</mat-card-title>
+                    <mat-card-title>{{uneCateg.genre}}</mat-card-title>
                     <span *ngIf="uneCateg.favori;then contenu else altcontenu"></span>
                     <ng-template #contenu>
                         <mat-card-subtitle>
@@ -16,9 +16,9 @@
                         <mat-card-subtitle>nope</mat-card-subtitle>
                     </ng-template>
                 </mat-card-header>
-                <img mat-card-image class="imgCategory" src="../../assets/{{uneCateg.image}}" alt="Photo of {{uneCateg.nom}}">
+                <img mat-card-image class="imgCategory" src="../../assets/{{uneCateg.price}}.jpg" alt="Photo of {{uneCateg.nom}}">
                 <mat-card-content>
-                    <p>{{uneCateg.description}}</p>
+                    <p>{{uneCateg.title}}</p>
                 </mat-card-content>
                 <mat-card-actions>
                     <button mat-button>START</button>

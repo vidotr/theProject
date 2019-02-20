@@ -8,8 +8,11 @@ import { CategorieService } from '../categorie.service';
   styleUrls: ['./accueil.component.css']
 })
 export class AccueilComponent implements OnInit {
-    // ListCategory: Array<Categorie>;
+    ListCategory: Array<Categorie>;
+    ListZaffaire: Array<any>;
     connectee: boolean;
+
+    uneCategorie: Categorie;
     ListCategoryTest: Categorie[] = [
         { nom: 'Technologie', description: 'Toutes les nouveauté sur la technologie', image: 'a.jpeg', favori: false },
         { nom: 'K-pop', description: 'Toutes les nouveauté sur la K-pop', image: 'One', favori: false },
@@ -21,11 +24,19 @@ export class AccueilComponent implements OnInit {
 
   ngOnInit() {
       this.connectee = false;
+      this.ListZaffaire = new Array();
 
+      /*this.CatService.getHttpArrayFormat().subscribe(val => {
+        console.log(val);
+      });*/
+      this.uneCategorie = new Categorie();
       this.CatService.getHttp().subscribe(val => {
         console.log(val);
+        this.ListZaffaire = val;
+        /*this.uneCategorie.nom = val.genre;
+        this.uneCategorie.description = val.title;
+        console.log('teh ' + val[0].genre);*/
       });
-      // this.ListCategory = new Array();
   }
 
 }
