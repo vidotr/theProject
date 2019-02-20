@@ -7,9 +7,15 @@ import { Observable } from 'rxjs';
 })
 export class FaqQuestionService {
 
+  httpOptions = {
+    headers: new HttpHeaders({
+      'Access-Control-Allow-Headers': 'Content-Type'
+    })
+  };
+
   constructor(private Http: HttpClient) { }
 
   getHttp(): Observable<any> {
-    return this.Http.get('https://localhost:5001/api/Question');
+    return this.Http.get('https://localhost:44378/api/question', this.httpOptions );
   }
 }

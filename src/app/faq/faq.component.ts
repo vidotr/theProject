@@ -24,9 +24,9 @@ export class FaqComponent implements OnInit {
        // In a real app: dispatch action to load the details here.
     });
 
-   /*this.faqQuest.getHttp().subscribe(val => {
+   this.faqQuest.getHttp().subscribe(val => {
       console.log(val);
-    });*/
+    });
   }
 
   ngOnDestroy() {
